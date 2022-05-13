@@ -25,9 +25,7 @@ namespace EasyLine_PascalTriangle
             Console.WriteLine("\n Pascal's Triangle");
             for(int i = 0; i<lines; i++)
             {
-                for(int space = 1; space <= lines-i; space++)
-                    Console.Write(" ");
-                
+                for(int space = 1; space <= lines-i; space++) Console.Write(" ");
                 for(int j = 0; j <= i; j++) 
                 {
                     if (j == 0||i == 0) value = 1;
@@ -40,15 +38,9 @@ namespace EasyLine_PascalTriangle
         
         public static void CalculateSquareOfCoefficients(BigInteger[] coefficients)
         {
-            for(int i=0; i<coefficients.Length; i++)
-            {
-                coefficients[i] *= coefficients[i];
-            }
             BigInteger sum = 0;
-            foreach (BigInteger items in coefficients)
-            {
-                sum+=items;
-            }
+            for(int i=0; i<coefficients.Length; i++) coefficients[i] *= coefficients[i];
+            foreach (BigInteger items in coefficients) sum+=items;
             Console.WriteLine("\nAnswer: {0} ", sum);
         }
             
