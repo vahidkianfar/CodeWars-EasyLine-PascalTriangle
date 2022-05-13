@@ -16,6 +16,11 @@ easyline(1) => 2
 
 easyline(4) => 70
 
+Pascal's Triangle:
+
+https://en.wikipedia.org/wiki/Pascal%27s_triangle
+
 
 Ref:
+
 http://mathworld.wolfram.com/BinomialCoefficient.html
