@@ -46,22 +46,23 @@ namespace EasyLine_PascalTriangle
             
         public static void Main()
         {
-            BigInteger[] coefArray =  Array.Empty<BigInteger>();
-            Console.Write("\nEnter the line number: ");
             try
             {
+                Console.Write("\nEnter the line number: ");
+                BigInteger[] coefArray =  Array.Empty<BigInteger>();
                 int lineLength = Int32.Parse(Console.ReadLine());
-                coefArray= PascalTriangleBinomialCoefficient(lineLength+1);
+                coefArray = PascalTriangleBinomialCoefficient(lineLength + 1);
                 CalculateSquareOfCoefficients(coefArray);
                 Console.WriteLine("\nDo You want to see the Pascal's Triangle? (Y/N)");
-                string answer = Console.ReadLine();
-                if (answer == "Y" || answer== "y") DrawPascalTriangle(lineLength+1);
+                string answer = Console.ReadLine().ToLower();
+                if (answer == "y") DrawPascalTriangle(lineLength + 1);
                 else Console.WriteLine("\nGoodbye!");
             }
             catch (Exception)
             {
                 Console.WriteLine("Please Enter a valid number");
             }
+            
         }
     }
 }
