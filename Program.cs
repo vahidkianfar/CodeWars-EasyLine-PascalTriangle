@@ -6,7 +6,6 @@ namespace EasyLine_PascalTriangle
         
         public static BigInteger[] PascalTriangleBinomialCoefficient(int lineNumber)
         {
-            
             int currentNumber = 1;
             BigInteger[] coefficients =  Array.Empty<BigInteger>();
             for(int line = lineNumber; line <= lineNumber; line++)
@@ -38,6 +37,7 @@ namespace EasyLine_PascalTriangle
                 Console.WriteLine();
             }
         }
+        
         public static void CalculateSquareOfCoefficients(BigInteger[] coefficients)
         {
             for(int i=0; i<coefficients.Length; i++)
@@ -70,9 +70,6 @@ namespace EasyLine_PascalTriangle
             {
                 Console.WriteLine("Please Enter a valid number");
             }
-             
-            
-            
         }
     }
 }
