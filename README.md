@@ -9,8 +9,11 @@ Can you write a program which calculate easyline(n) where n is the horizontal li
 The function will take n (with: n>= 0) as parameter and will return the sum of the squares of the binomial coefficients on line n.
 
 Examples:
+
 easyline(0) => 1
+
 easyline(1) => 2
+
 easyline(4) => 70
 
 
