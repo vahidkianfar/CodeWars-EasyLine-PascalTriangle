@@ -12,6 +12,7 @@ Examples:
 easyline(0) => 1
 easyline(1) => 2
 easyline(4) => 70
-easyline(50) => 100891344545564193334812497256
+
+
 Ref:
 http://mathworld.wolfram.com/BinomialCoefficient.html
