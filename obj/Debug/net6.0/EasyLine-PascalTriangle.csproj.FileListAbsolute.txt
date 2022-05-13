@@ -1,0 +1,15 @@
+C:\Users\Vahid\RiderProjects\EasyLine-PascalTriangle\EasyLine-PascalTriangle\bin\Debug\net6.0\EasyLine-PascalTriangle.exe
+C:\Users\Vahid\RiderProjects\EasyLine-PascalTriangle\EasyLine-PascalTriangle\bin\Debug\net6.0\EasyLine-PascalTriangle.deps.json
+C:\Users\Vahid\RiderProjects\EasyLine-PascalTriangle\EasyLine-PascalTriangle\bin\Debug\net6.0\EasyLine-PascalTriangle.runtimeconfig.json
+C:\Users\Vahid\RiderProjects\EasyLine-PascalTriangle\EasyLine-PascalTriangle\bin\Debug\net6.0\EasyLine-PascalTriangle.dll
+C:\Users\Vahid\RiderProjects\EasyLine-PascalTriangle\EasyLine-PascalTriangle\bin\Debug\net6.0\EasyLine-PascalTriangle.pdb
+C:\Users\Vahid\RiderProjects\EasyLine-PascalTriangle\EasyLine-PascalTriangle\obj\Debug\net6.0\EasyLine-PascalTriangle.csproj.AssemblyReference.cache
+C:\Users\Vahid\RiderProjects\EasyLine-PascalTriangle\EasyLine-PascalTriangle\obj\Debug\net6.0\EasyLine-PascalTriangle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vahid\RiderProjects\EasyLine-PascalTriangle\EasyLine-PascalTriangle\obj\Debug\net6.0\EasyLine-PascalTriangle.AssemblyInfoInputs.cache
+C:\Users\Vahid\RiderProjects\EasyLine-PascalTriangle\EasyLine-PascalTriangle\obj\Debug\net6.0\EasyLine-PascalTriangle.AssemblyInfo.cs
+C:\Users\Vahid\RiderProjects\EasyLine-PascalTriangle\EasyLine-PascalTriangle\obj\Debug\net6.0\EasyLine-PascalTriangle.csproj.CoreCompileInputs.cache
+C:\Users\Vahid\RiderProjects\EasyLine-PascalTriangle\EasyLine-PascalTriangle\obj\Debug\net6.0\EasyLine-PascalTriangle.dll
+C:\Users\Vahid\RiderProjects\EasyLine-PascalTriangle\EasyLine-PascalTriangle\obj\Debug\net6.0\refint\EasyLine-PascalTriangle.dll
+C:\Users\Vahid\RiderProjects\EasyLine-PascalTriangle\EasyLine-PascalTriangle\obj\Debug\net6.0\EasyLine-PascalTriangle.pdb
+C:\Users\Vahid\RiderProjects\EasyLine-PascalTriangle\EasyLine-PascalTriangle\obj\Debug\net6.0\EasyLine-PascalTriangle.genruntimeconfig.cache
+C:\Users\Vahid\RiderProjects\EasyLine-PascalTriangle\EasyLine-PascalTriangle\obj\Debug\net6.0\ref\EasyLine-PascalTriangle.dll
