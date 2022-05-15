@@ -23,13 +23,13 @@ namespace EasyLine_PascalTriangle
         {
             int value = 1;
             Console.WriteLine("\n Pascal's Triangle");
-            for(int i = 0; i<lines; i++)
+            for(int verticalLines = 0; verticalLines<lines; verticalLines++)
             {
-                for(int space = 1; space <= lines-i; space++) Console.Write(" ");
-                for(int j = 0; j <= i; j++) 
+                for(int space = 1; space <= lines-verticalLines; space++) Console.Write(" ");
+                for(int horizontalLines = 0; horizontalLines <= verticalLines; horizontalLines++) 
                 {
-                    if (j == 0||i == 0) value = 1;
-                    else value = value*(i-j+1)/j;
+                    if (horizontalLines == 0||verticalLines == 0) value = 1;
+                    else value = value*(verticalLines-horizontalLines+1)/horizontalLines;
                     Console.Write(value + " ");
                 }
                 Console.WriteLine();
