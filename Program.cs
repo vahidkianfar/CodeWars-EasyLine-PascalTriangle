@@ -54,14 +54,14 @@ namespace EasyLine_PascalTriangle
                     {
                         int lineLength = int.Parse(Console.ReadLine()!);
                         if (lineLength == -1) Environment.Exit(0);
-                        if (lineLength >= 0)
+                        else if (lineLength >= 0)
                         {
                             coefArray = PascalTriangleBinomialCoefficient(lineLength + 1);
                             Console.WriteLine("The Answer is: {0}", CalculateSquareOfCoefficients(coefArray));
                             Console.WriteLine("\nDo You want to see the Pascal's Triangle? (Y/N)");
                             string answer = Console.ReadLine()!.ToLower();
                             if (answer == "y") DrawPascalTriangle(lineLength + 1);
-                            if (answer == "n") {Console.WriteLine("\nSee you later!"); Environment.Exit(0); }
+                            else if (answer == "n") {Console.WriteLine("\nSee you later!"); Environment.Exit(0); }
                             else
                             {
                                 Console.WriteLine("\nDo you want to continue? (Y/N)");
@@ -71,7 +71,7 @@ namespace EasyLine_PascalTriangle
                             }
                             
                         }
-                        else Console.WriteLine("\nPlease enter a Positive number!");
+                        Console.WriteLine("\nPlease enter a Positive number!");
                     }
                     catch (Exception)
                     {
