@@ -54,7 +54,7 @@ namespace EasyLine_PascalTriangle
                 coefArray = PascalTriangleBinomialCoefficient(lineLength + 1);
                 CalculateSquareOfCoefficients(coefArray);
                 Console.WriteLine("\nDo You want to see the Pascal's Triangle? (Y/N)");
-                string answer = Console.ReadLine().ToLower();
+                string answer = Console.ReadLine()!.ToLower();
                 if (answer == "y") DrawPascalTriangle(lineLength + 1);
                 else Console.WriteLine("\nGoodbye!");
             }
