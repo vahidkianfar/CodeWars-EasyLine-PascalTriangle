@@ -10,10 +10,10 @@ namespace EasyLine_PascalTriangle
             BigInteger[] coefficients =  Array.Empty<BigInteger>();
             for(int line = lineNumber; line <= lineNumber; line++)
             {
-                for(int i = 1; i <= line; i++)
+                for(int counter = 1; counter <= line; counter++)
                 {
                     coefficients = coefficients.Append(currentNumber).ToArray();
-                    currentNumber = currentNumber * (line - i) / i;
+                    currentNumber = currentNumber * (line - counter) / counter;
                 }
             }
             return coefficients;
@@ -28,7 +28,7 @@ namespace EasyLine_PascalTriangle
                 for(int space = 1; space <= lines-verticalLines; space++) Console.Write(" ");
                 for(int horizontalLines = 0; horizontalLines <= verticalLines; horizontalLines++) 
                 {
-                    if (horizontalLines == 0||verticalLines == 0) value = 1;
+                    if (horizontalLines == 0 ||verticalLines == 0) value = 1;
                     else value = value*(verticalLines-horizontalLines+1)/horizontalLines;
                     Console.Write(value + " ");
                 }
@@ -50,7 +50,7 @@ namespace EasyLine_PascalTriangle
             {
                 Console.Write("\nEnter the line number: ");
                 BigInteger[] coefArray =  Array.Empty<BigInteger>();
-                int lineLength = Int32.Parse(Console.ReadLine());
+                int lineLength = Int32.Parse(Console.ReadLine()!);
                 coefArray = PascalTriangleBinomialCoefficient(lineLength + 1);
                 CalculateSquareOfCoefficients(coefArray);
                 Console.WriteLine("\nDo You want to see the Pascal's Triangle? (Y/N)");
