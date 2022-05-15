@@ -36,33 +36,49 @@ namespace EasyLine_PascalTriangle
             }
         }
         
-        public static void CalculateSquareOfCoefficients(BigInteger[] coefficients)
+        public static BigInteger CalculateSquareOfCoefficients(BigInteger[] coefficients)
         {
             BigInteger sum = 0;
             for(int i=0; i<coefficients.Length; i++) coefficients[i] *= coefficients[i];
             foreach (BigInteger items in coefficients) sum+=items;
-            Console.WriteLine("\nAnswer: {0} ", sum);
+            return sum;
         }
             
         public static void Main()
         {
-            try
+            while (true)
             {
-                Console.Write("\nEnter the line number: ");
-                BigInteger[] coefArray =  Array.Empty<BigInteger>();
-                int lineLength = Int32.Parse(Console.ReadLine()!);
-                coefArray = PascalTriangleBinomialCoefficient(lineLength + 1);
-                CalculateSquareOfCoefficients(coefArray);
-                Console.WriteLine("\nDo You want to see the Pascal's Triangle? (Y/N)");
-                string answer = Console.ReadLine()!.ToLower();
-                if (answer == "y") DrawPascalTriangle(lineLength + 1);
-                else Console.WriteLine("\nGoodbye!");
+                Console.Write("\nEnter the line number (enter \"-1\" to quit): ");
+                    BigInteger[] coefArray = Array.Empty<BigInteger>();
+                    try
+                    {
+                        int lineLength = int.Parse(Console.ReadLine()!);
+                        if (lineLength == -1) Environment.Exit(0);
+                        if (lineLength >= 0)
+                        {
+                            coefArray = PascalTriangleBinomialCoefficient(lineLength + 1);
+                            Console.WriteLine("The Answer is: {0}", CalculateSquareOfCoefficients(coefArray));
+                            Console.WriteLine("\nDo You want to see the Pascal's Triangle? (Y/N)");
+                            string answer = Console.ReadLine()!.ToLower();
+                            if (answer == "y") DrawPascalTriangle(lineLength + 1);
+                            if (answer == "n") {Console.WriteLine("\nSee you later!"); Environment.Exit(0); }
+                            else
+                            {
+                                Console.WriteLine("\nDo you want to continue? (Y/N)");
+                                string showMustGoOn = Console.ReadLine()!.ToLower();
+                                if (showMustGoOn == "y") continue;
+                                Console.WriteLine("\nSee you later!"); Environment.Exit(0);
+                            }
+                            
+                        }
+                        else Console.WriteLine("\nPlease enter a Positive number!");
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("\nInvalid input. Try again.");
+                    }
             }
-            catch (Exception)
-            {
-                Console.WriteLine("Please Enter a valid number");
-            }
-            
+
         }
     }
 }
